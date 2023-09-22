@@ -1,0 +1,101 @@
+
+
+:root{
+
+    --VeryDarkBlue: hsl(235, 21%, 11%);
+    --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+    --LightGrayishBlue: hsl(234, 39%, 85%);
+    --LightGrayishBlue__hover: hsl(236, 33%, 92%);
+    --DarkGrayishBlue: hsl(234, 11%, 52%);
+    --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+    --VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:hsl(235, 21%, 11%);
+    font-size: 18px;
+}
+
+header{
+    background-image: url(./images/bg-desktop-dark.jpg);
+    font-family: 'Josefin sans';
+    padding-top:4rem;
+    padding-bottom: 12rem;
+    color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+img{
+    width: 20px;
+    align-self: center;
+}
+
+.todo_head{
+
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    margin-bottom: 1.5rem;
+}
+
+input:nth-of-type(2){
+    background-color: var(--VeryDarkDesaturatedBlue) ;
+    border: 0;
+    color: var(--LightGrayishBlue);
+    font-size: 18px;
+}
+
+.new_todo{
+    border: 1px solid white;
+    padding: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    background-color: var(--VeryDarkDesaturatedBlue);
+    border: 0;
+    margin-bottom: 1.5rem;
+}
+
+.content > li{
+    list-style: none;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--DarkGrayishBlue) ;
+    background-color: var(--VeryDarkDesaturatedBlue);
+}
+
+
+
+.container {
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+label{
+    display: flex;
+}
+
+label > p{
+    color: white;
+    opacity: 0.5;
+}
+
+h1{
+    font-family: 'Josefin sans';
+    color: white;
+    letter-spacing: 1rem;
+    font-weight: 700;
+    font-style: bold;
+}
