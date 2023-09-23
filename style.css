@@ -58,62 +58,100 @@ input:nth-of-type(2){
 }
 
 .new_todo{
-    border: 1px solid white;
     padding: 1rem;
     display: flex;
     gap: 0.5rem;
     background-color: var(--VeryDarkDesaturatedBlue);
     border: 0;
     margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+input[type = "checkbox"]{
+
+    width: 20px;
+    border-radius: 100%;
+}
+
+input[type = "text"]{
+    margin-left: 1.5rem;
 }
 
 .new_todo > li {
     list-style: none;
 }
 
-/* Hide the default checkbox */
-input[type="checkbox"] {
-    display: none;
+
+li p{
+    margin-left: 1.5rem;
 }
 
-/* Define the custom checkbox container */
-label {
-    position: relative;
-    padding-left: 30px; /* Space for the custom checkbox */
-    margin-bottom: 10px;
+input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    clip-path: circle(42% at 50% 50%);
+    background-color: red;
+}
+
+input[type = "checkbox"]:hover{
+
     cursor: pointer;
 }
 
-/* Define the custom circular checkbox */
-.checkbox-checkmark  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px; /* Height of the custom checkbox */
-    width: 20px; /* Width of the custom checkbox */
-    background-color:var(--VeryDarkDesaturatedBlue); /* Background color when not selected */
-    background-color: linear-gradient(to right,hsl(192, 100%, 67%) to hsl(280, 87%, 65%));
-    border: 2px solid var(--VeryDarkGrayishBlue); /* Border of the custom checkbox */
-    border-radius: 50%; /* Make it circular */
+input[type = "checkbox"]:checked{
+    background: linear-gradient(to left hsl(192, 100%, 67%) to hsl(280, 87%, 65%));
 }
-
-/* Style the custom checkbox when checked */
-input[type="checkbox"]:checked + .checkbox-checkmark  {
-    background-color: linear-gradient(to right,hsl(192, 100%, 67%) to hsl(280, 87%, 65%)); /* Background color when selected */
-}
-
 
 .content > li{
     list-style: none;
     padding: 1rem;
     border-bottom: 1px solid var(--VeryDarkGrayishBlue) ;
     background-color: var(--VeryDarkDesaturatedBlue);
+    display: flex;
+}
+
+.content{
+    background-color: var(--VeryDarkDesaturatedBlue);
+    border-radius: 5px;
+    padding: 0.5rem;
+
+}
+
+
+section{
+    display: flex;
+    gap:1.5rem ;
+}
+
+.all{
+    color: hsl(220, 98%, 61%);
+}
+
+.status p:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.status{
+    display: flex;
+    gap: 5rem;
+    color: var(--DarkGrayishBlue);
+    padding: 1rem;
+}
+
+p.drag_drop{
+
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: hsl(237, 14%, 26%);
+
 }
 
 
 
 .container {
-    max-width: 500px;
+    /* max-width: 500px; */
     position: absolute;
     top: 50%;
     left: 50%;

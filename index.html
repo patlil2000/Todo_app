@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <!--Background_image-->
+  <!--Background_image for header-->
   <header>
     
   </header>
@@ -42,14 +42,14 @@
     <!--Todo_list-->
   
 
-    <div class="new_todo">
+    <div class="new_todo"> <!--This section accepts input from the user-->
 
       <li>
 
         <label for="">
           <input type="checkbox">
           <span class="checkbox-checkmark"></span>
-          <input type="text" placeholder="Create a new todo list">
+          <input type="text" placeholder="Create a new todo list" >
         </label>
 
       </li>
@@ -58,11 +58,11 @@
 
     </div>
 
-    <div class="content">
+    <div class="content"><!--The list is updated here-->
       <li>
 
         <label for="">
-          <input type="checkbox">
+          <input type="checkbox" class="checkbox-round">
           <span class="checkbox-checkmark"></span>
           <p>Complete online javascript cousre</p>
         </label>
@@ -119,6 +119,28 @@
 
       </li>
 
+      <div class="status"><!--filters are present here-->
+
+        <p>5 items left</p>
+
+        <section>
+          <p><span class="all">All</span></p>
+          <p>Active </p>
+          <p>Completed</p>
+
+        </section>
+
+        <p>Clear Completed</p>
+
+
+      </div>
+
+      
+
+    </div>
+
+    <p class="drag_drop">Drag and drop to reorder list</p>
+
   </div>
 
 
@@ -127,15 +149,15 @@
 
  
 
-  <!-- Add dynamic number --> items left
+  <!-- Add dynamic number --> 
 
-  All
-  Active 
-  Completed
+  
+  
+  
 
-  Clear Completed
+  
 
-  Drag and drop to reorder list
+  
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
